@@ -1,0 +1,1 @@
+require('./bem/controllers/app-controller');

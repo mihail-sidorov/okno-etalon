@@ -1,0 +1,39 @@
+.services-offered {
+
+
+    .owl-stage {
+
+        display: flex;
+
+        &::before, &::after {
+
+            display: none;
+        }
+
+        .owl-item {
+
+            display: flex;
+
+            .services-offered__slider-item {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .services-offered__slider-item-title {
+
+                    font-size: 1.6rem;
+                    margin-bottom: 60px;
+                    padding: 0 10px;
+                }
+
+                .services-offered__slider-item-desc {
+
+                    font-size: 1.2rem;
+                    margin-top: 40px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

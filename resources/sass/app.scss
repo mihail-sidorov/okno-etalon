@@ -1,4 +1,12 @@
 // Variables
 @import 'variables';
 
+// Common
+@import 'common';
+
 // BEM
+@import 'bem/wrapper';
+@import 'bem/header';
+@import 'bem/long-btn';
+@import 'bem/main-title';
+@import 'bem/services-offered';

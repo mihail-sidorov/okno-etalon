@@ -6,6 +6,7 @@
 
             position: relative;
             z-index: 1;
+            padding-bottom: 60px;
     
             .owl-stage {
     
@@ -25,6 +26,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 
                         &::before {
 
@@ -35,12 +37,12 @@
                             top: 0;
                             left: 0;
                             background-color: $main_color4;
-                            opacity: 0.06;
+                            opacity: 0.1;
                         }
         
                         .services-offered__slider-item-title {
         
-                            font-size: 1.5rem;
+                            font-size: 1.4rem;
                             margin-bottom: 60px;
                             padding: 20px;
                             position: relative;
@@ -67,9 +69,9 @@
     
             position: absolute;
             width: 100%;
-            height: 120px;
+            height: 140px;
             top: 50%;
-            margin-top: -35px;
+            margin-top: -70px;
             left: 0;
             overflow: hidden;
     
@@ -87,6 +89,7 @@
                 background-color: rgba(255, 255, 255, 0.1);
                 transition: all ease 0.25s;
                 outline: none;
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     
                 span {
     
@@ -115,7 +118,6 @@
     
             line-height: 15px;
             text-align: center;
-            margin-top: 20px;
     
             .owl-dot {
     

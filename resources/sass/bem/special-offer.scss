@@ -1,0 +1,31 @@
+.special-offer {
+
+    .special-offer__text {
+
+        background-image: url('/imgs/colaz.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        min-height: 556px;
+        position: relative;
+
+        h1 {
+
+            margin-bottom: 60px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: $main_color2;
+
+            span {
+
+                display: block;
+                font-size: 3rem;
+            }
+        }
+
+        .special-offer__desc {
+
+            font-size: 1.5rem;
+            max-width: 500px;
+        }
+    }
+}

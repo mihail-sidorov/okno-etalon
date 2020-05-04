@@ -20,8 +20,14 @@
         width: 200px;
         height: 50px;
 
-        .long-btn {
+        .header__order-call-mobile-btn {
 
+            display: none;
+        }
+
+        .header__order-call-btn {
+
+            display: block;
             position: fixed;
             z-index: 999;
         }

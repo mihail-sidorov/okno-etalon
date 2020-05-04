@@ -1,0 +1,57 @@
+@media screen and (max-width:780px) {
+
+    .header {
+
+        .header__logo {
+
+            margin-right: 0;
+        }
+
+        .header__phone {
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .header__order-call {
+
+            width: 60px;
+            height: 60px;
+
+            .header__order-call-btn {
+
+                display: none;
+            }
+
+            .header__order-call-mobile-btn {
+
+                display: block;
+                position: fixed;
+                z-index: 999;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background-color: $additional_color;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all ease 0.25s;
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                color: #fff;
+
+                &:hover {
+
+                    background-color: $additional_color2;
+                }
+
+                svg {
+
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@media screen and (max-width:1200px) {
+
+    .main-title {
+
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .main-title {
+
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .main-title {
+
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .main-title {
+
+        margin-bottom: 20px;
+    }
+}

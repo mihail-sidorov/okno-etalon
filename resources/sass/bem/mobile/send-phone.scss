@@ -1,0 +1,43 @@
+@media screen and (max-width:1200px) {
+
+    .send-phone {
+    
+        .send-phone__desc {
+
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .send-phone {
+    
+        .send-phone__desc {
+
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .send-phone {
+    
+        .send-phone__desc {
+
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .send-phone {
+    
+        .send-phone__desc {
+
+            margin-bottom: 20px;
+        }
+    }
+}

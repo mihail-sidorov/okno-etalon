@@ -1,0 +1,19 @@
+@media screen and (max-width:575px) {
+
+    .feedback-form {
+    
+        .feedback-form__inputs {
+    
+            .feedback-form__name {
+
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .feedback-form__phone {
+
+                padding-left: 0;
+            }
+        }
+    }
+}

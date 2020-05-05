@@ -1,0 +1,29 @@
+@media screen and (max-width:767px) {
+
+    .footer {
+
+        .footer__wrapper {
+
+            .footer__rights {
+
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            .footer__phone {
+    
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .footer {
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

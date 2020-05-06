@@ -56,6 +56,13 @@
             background: transparent;
             min-height: 0;
 
+            .special-offer__img {
+
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
             .special-offer__desc {
 
                 max-width: none;
@@ -97,6 +104,11 @@
             h1 {
 
                 margin-bottom: 20px;
+            }
+
+            .special-offer__img {
+
+                margin-bottom: 10px;
             }
         }
     }

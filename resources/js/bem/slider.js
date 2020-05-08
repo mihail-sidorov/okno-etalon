@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $('.services-offered__slider-items').each((index, element) => {
+    $('.slider__items').each((index, element) => {
         $(element).owlCarousel({
             loop:true, //Зацикливаем слайдер
             margin:40, //Отступ от элемента справа в 50px
@@ -32,7 +32,7 @@ $(document).ready(() => {
 
     function setMaxHeightTitle($sliderItems){
         setTimeout(() => {
-            var max = 0, $title = $sliderItems.find('.services-offered__slider-item-title');
+            var max = 0, $title = $sliderItems.find('.slider__item-title');
     
             $title.css('height', 'auto');
             $title.css('height');

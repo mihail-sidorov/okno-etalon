@@ -273,17 +273,18 @@
                         <input type="text" placeholder="Имя" name="name-string-!">
                     </div>
                     <div class="feedback-form__phone col-sm-6">
-                        <input type="text" placeholder="Телефон" name="phone-phone-*">
+                        <input type="tel" placeholder="Телефон" name="phone-phone-*">
                     </div>
                 </div>
                 <div class="feedback-form__comments">
                     <textarea placeholder="Комментарии или пожелания" name="text-text-!"></textarea>
                 </div>
-                <input type="hidden" name="subject-string-*" value="Заявка на обратный звонок">
-                <button type="submit" class="feedback-form__submit-btn long-btn">Отправить</button>
                 <div class="feedback-form__checkbox">
                     <label class="feedback-form__checkbox-label"><input type="checkbox" name="captcha-captcha-*"> Согласен на обработку персональных данных</label>
                 </div>
+                <input type="hidden" name="subject-string-*" value="Заявка на обратный звонок">
+                <div class="feedback-form__message"></div>
+                <button type="submit" class="feedback-form__submit-btn long-btn">Отправить</button>
             </form>
         </section>
 
@@ -310,10 +311,11 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="public/js/libraries/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="public/js/libraries/owl.carousel.min.js"></script>
+        <script src="public/js/libraries/maskedinput.min.js"></script>
         
         <!-- App JS -->
         <script src="public/js/app.js"></script>

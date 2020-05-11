@@ -9,9 +9,10 @@
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    transition: all ease 0.25s;
+    transition: background-color ease 0.25s;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     border: 0;
+    outline: none !important;
 
     &:hover {
 

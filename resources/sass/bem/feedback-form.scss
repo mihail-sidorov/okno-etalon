@@ -48,15 +48,57 @@
         }
     }
 
-    .feedback-form__submit-btn {
-
-        display: block;
-        margin: 0 auto 40px auto;
-        padding: 0;
-    }
-
     .feedback-form__checkbox {
 
         text-align: center;
+        margin-bottom: 40px;
+
+        .feedback-form__checkbox-label {
+
+            margin: 0;
+        }
+    }
+
+    .feedback-form__message {
+
+        margin-bottom: 40px;
+        display: none;
+
+        ul, li {
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+
+            color: #27c868;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        &_error {
+
+            li {
+
+                color: #e20a0a;
+            }
+        }
+    }
+
+    .feedback-form__submit-btn {
+
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+
+        &_load {
+
+            font-size: 0;
+            background-image: url('/imgs/feedback-form-preloader.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }

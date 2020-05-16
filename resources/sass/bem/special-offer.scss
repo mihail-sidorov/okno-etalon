@@ -8,12 +8,13 @@
         min-height: 556px;
         position: relative;
 
-        h1 {
+        h2 {
 
             margin-bottom: 60px;
             font-size: 2rem;
-            font-weight: bold;
+            font-weight: 400;
             color: $main_color2;
+            line-height: 1.3;
 
             span {
 

@@ -208,7 +208,7 @@ $(document).ready(() => {
                     $.ajax({
 
                         type: 'POST',
-                        url: '/public/ajax/form-validator.php',
+                        url: '/ajax/form-validator.php',
                         data: fields,           
                         success:  function(response) { 
 

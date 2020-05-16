@@ -1,7 +1,5 @@
 .advantages {
 
-    margin-top: 140px;
-
     .advantages__items {
 
         display: flex;
@@ -50,32 +48,84 @@
                     opacity: 0.2;
                 }
 
-                .advantages__item-icon {
+                .advantages__item-icons {
 
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 50%;
-                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
                     position: relative;
-                    text-align: center;
-                    line-height: 140px;
-                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-                    margin: 0 auto 40px auto;
-                    color: $additional_color;
+                    margin-bottom: 40px;
 
-                    svg {
+                    .advantages__item-icon {
+
+                        width: 33.33%;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+                        margin-right: 20px;
+                        padding: 10px;
+
+                        &:last-child {
+
+                            margin-right: 0;
+                        }
     
-                        display: inline-block;
-                        width: 60px;
-                        height: 60px;
-                        vertical-align: middle;
+                        img {
+        
+                            display: block;
+                            width: 100%;
+                        }
                     }
                 }
     
                 .advantages__item-desc {
     
                     position: relative;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
+
+                    p {
+
+                        margin-bottom: 10px;
+                        
+                        &::before {
+
+                            content: '';
+                            display: inline-block;
+                            width: 20px;
+                        }
+                    }
+
+                    ul, li {
+
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+
+                    ul {
+
+                        &::before {
+
+                            content: '';
+                            display: inline-block;
+                            width: 20px;
+                        }
+
+                        li {
+
+                            padding-left: 25px;
+                            position: relative;
+
+                            &::before {
+
+                                content: '-';
+                                display: block;
+                                width: 25px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
                 }
             }
         }

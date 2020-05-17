@@ -45,6 +45,7 @@
                 background-color: #fff;
                 box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
                 transition: all ease 0.25s;
+                outline: none;
 
                 &:hover {
 
@@ -70,6 +71,14 @@
 
             text-align: right;
             font-size: 1.2rem;
+
+            a {
+
+                display: inline-block;
+                color: #000;
+                text-decoration: none;
+                outline: none;
+            }
         }
     }
 }

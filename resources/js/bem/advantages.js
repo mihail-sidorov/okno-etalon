@@ -7,19 +7,19 @@ $(document).ready(() => {
     });
 
     function getMinWidth(){
-        var minHeight;
+        var minWidth;
 
         $('.advantages__item-icon').css('width', '33.33%');
-        minHeight = $('.advantages__item-icons').innerHeight();
+        minWidth = $('.advantages__item-icon').innerWidth();
 
-        $('.advantages__item-icons').each((index, element) => {
-            var elementHeight = $(element).innerHeight();
+        $('.advantages__item-icon').each((index, element) => {
+            var elementWidth = $(element).innerWidth();
 
-            if (elementHeight < minHeight) {
-                minHeight = elementHeight;
+            if (elementWidth < minWidth) {
+                minWidth = elementWidth;
             }
         });
 
-        return Math.floor(minHeight);
+        return Math.floor(minWidth);
     }
 });

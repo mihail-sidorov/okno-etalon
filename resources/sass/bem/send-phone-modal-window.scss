@@ -1,0 +1,30 @@
+.send-phone-modal-window {
+
+    .send-phone-modal-window__content {
+
+        max-width: 1400px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+
+        .send-phone-modal-window__head {
+
+            display: none;
+        }
+
+        .send-phone-modal-window__desc {
+
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 60px;
+            color: $main_color2;
+            line-height: 1.3;
+        }
+
+        .send-phone-modal-window__form {
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

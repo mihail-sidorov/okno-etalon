@@ -1,0 +1,55 @@
+@media screen and (max-width:1200px) {
+
+    .send-phone-modal-window {
+
+        .send-phone-modal-window__content {
+
+            .send-phone-modal-window__desc {
+
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .send-phone-modal-window {
+
+        .send-phone-modal-window__content {
+
+            .send-phone-modal-window__desc {
+
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .send-phone-modal-window {
+
+        .send-phone-modal-window__content {
+
+            .send-phone-modal-window__desc {
+
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .send-phone-modal-window {
+
+        .send-phone-modal-window__content {
+
+            .send-phone-modal-window__desc {
+
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

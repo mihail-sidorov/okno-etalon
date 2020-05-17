@@ -42,7 +42,7 @@
                         <li>Сосна</li>
                         <li>Лиственница</li>
                         <li>Дуб</li>
-                        <li>Термодревесина <span>NEW!!!</span></li>
+                        <li>Термодревесина <span class="buklet__new">NEW!!!</span></li>
                     </ul>
                     <ul>
                         <li>100% массив</li>
@@ -377,14 +377,36 @@
         </footer>
 
         <!-- Модальное окно формы обратной связи -->
-        <div class="modal-window add-device-modal-window">
+        <div class="modal-window send-phone-modal-window">
             <div class="modal-window__cover"></div>
             <div class="modal-window__wrapper">
-                <div class="modal-window__content">
+                <div class="modal-window__content send-phone-modal-window__content">
                     <div class="modal-window__close"></div>
-                    <div class="modal-window__head">Форма обратной связи</div>
+                    <div class="modal-window__head send-phone-modal-window__head">Форма обратной связи</div>
                     <div class="modal-window__body">
-                        
+                        <div class="main-title">Форма обратной связи</div>
+                        <div class="send-phone-modal-window__desc">
+                            Оставьте свои контактные данные, и мы вам перезвоним
+                        </div>
+                        <form class="feedback-form send-phone__form send-phone-modal-window__form">
+                            <div class="feedback-form__inputs row">
+                                <div class="feedback-form__name col-sm-6">
+                                    <input type="text" placeholder="Имя" name="name-string-!">
+                                </div>
+                                <div class="feedback-form__phone col-sm-6">
+                                    <input type="tel" placeholder="Телефон" name="phone-phone-*">
+                                </div>
+                            </div>
+                            <div class="feedback-form__comments">
+                                <textarea placeholder="Комментарии или пожелания" name="text-text-!"></textarea>
+                            </div>
+                            <div class="feedback-form__checkbox">
+                                <label class="feedback-form__checkbox-label"><input type="checkbox" name="captcha-captcha-*"> Согласен на обработку персональных данных</label>
+                            </div>
+                            <input type="hidden" name="subject-string-*" value="Заявка на обратный звонок">
+                            <div class="feedback-form__message"></div>
+                            <button type="submit" class="feedback-form__submit-btn long-btn">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,115 @@
+html.hide-scroll, body.hide-scroll {
+
+    overflow: hidden;
+}
+
+.modal-window {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+
+    .modal-window__cover {
+
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+    }
+
+    .modal-window__wrapper {
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0, 120px) scale(0.9);
+        opacity: 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        overflow: hidden;
+
+        .modal-window__content {
+
+            width: 100%;
+            max-width: 460px;
+            min-height: 440px;
+            border-radius: 0.25rem;
+            background-color: #fff;
+            padding: 50px;
+            position: relative;
+            flex-shrink: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            .modal-window__close {
+
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+
+                &:hover {
+
+                    opacity: 0.6;
+                }
+
+                &::before, &::after {
+
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 1px;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -10px;
+                    background-color: #495057;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .modal-window__head {
+
+                line-height: 3rem;
+                letter-spacing: 0.02em;
+                color: #343332;
+                margin-bottom: 32px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &_animate {
+
+        .modal-window__wrapper {
+        
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    &_open {
+
+        .modal-window__wrapper {
+
+            overflow: auto;
+        }
+    }
+}

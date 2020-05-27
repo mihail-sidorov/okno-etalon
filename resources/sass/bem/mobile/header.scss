@@ -1,3 +1,31 @@
+@media screen and (max-width:1200px) {
+
+    .header {
+    
+        .header__logo {
+    
+            img {
+    
+                width: 175px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header {
+    
+        .header__logo {
+    
+            img {
+    
+                width: 150px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:780px) {
 
     .header {
@@ -5,6 +33,11 @@
         .header__logo {
 
             margin-right: 0;
+
+            img {
+    
+                width: 125px;
+            }
         }
 
         .header__phone {
@@ -60,9 +93,17 @@
 
     .header {
 
+        .header__logo {
+
+            img {
+    
+                width: 100px;
+            }
+        }
+
         .header__phone {
 
-                font-size: 0.8rem;
+            font-size: 0.8rem;
         }
     }
 }

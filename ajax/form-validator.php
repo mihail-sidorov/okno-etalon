@@ -8,8 +8,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/mail-config.php';
 
-$form_validator = new FormValidator;
+$form_validator = new FormValidator($host, $user_name, $password, $secure, $port, $send_to);
 
 class FormValidator{
 
@@ -19,7 +20,7 @@ class FormValidator{
 
     public $subject = '';
 
-    public function __construct(){
+    public function __construct($host, $user_name, $password, $secure, $port, $send_to){
       
         foreach ($_POST as $key => $value){
 
@@ -140,18 +141,18 @@ class FormValidator{
             try {
                 //$mail->SMTPDebug = 2;
                 $mail->isSMTP();
-                $mail->Host = 'smtp.gmail.com';
+                $mail->Host = $host;
                 $mail->SMTPAuth = true;
-                $mail->Username = 'sidorov.mihail.maykop@gmail.com';
-                $mail->Password = '|$mZFXCDYJrWAi?{1Nph';
-                $mail->SMTPSecure = 'tls';
-                $mail->Port = 587;
+                $mail->Username = $user_name;
+                $mail->Password = $password;
+                $mail->SMTPSecure = $secure;
+                $mail->Port = $port;
                 $mail->CharSet = 'UTF-8';
 
                 //Recipients
-                $mail->setFrom('sidorov.mihail.maykop@gmail.com', 'Okno-Etalon');
-                $mail->addAddress('amakaroff2012@yandex.ru', 'Okno-Etalon');
-                $mail->addReplyTo('sidorov.mihail.maykop@gmail.com', 'Okno-Etalon');
+                $mail->setFrom($user_name, 'Okno-Etalon');
+                $mail->addAddress($send_to, 'Okno-Etalon');
+                $mail->addReplyTo($user_name, 'Okno-Etalon');
 
                 //Content
                 $mail->isHTML(true);
